@@ -5,12 +5,14 @@
 
 This portfolio is solely used for my own personal projects and documentation. Feel free to have a look around. 
 
+---
+
 ## ♛ Social Links
 ✒ [LinkedIn](https://www.linkedin.com/in/urshula-szymczyk-aa05452b7/)
 🖌 [Art profile - Cara](https://cara.app/thevoidedone)
 🖼️ [Art website](https://deermadness.my.canva.site/artwebsite)
 
-## ♞ Languages and Tools
+## ♞ My Digital Expertise
 
 <img align="left" alt="Midas" width="30px" style="padding-right:10px;" src="https://usoftly.ir/wp-content/uploads/2021/10/midas_nGen_2021_v11_x64.png" />
 <img align="left" alt="Revit" width="30px" style="padding-right:10px;" src="https://brandlogos.net/wp-content/uploads/2022/09/autodesk_revit-logo_brandlogos.net_4hpe4-512x512.png" />
@@ -23,6 +25,18 @@ This portfolio is solely used for my own personal projects and documentation. Fe
 
 <br />
 
-----
+
+## ♟ Projects list
+
+**◩ The CUBE project**
 
 
+Filename `program_rzutowanie.cpp`
+
+What is this? `This is a C++ program written using OpenGL that renders a rotating 3D cube. It contains basic functions such as zooming in and out, dragging the cube around, changing colour, resizing and rotating the cube.`
+
+<br />
+
+**◩ Finding the meaning of life WIP**
+
+...
