@@ -1,1 +1,1 @@
-Hullo
+This is a C++ program written using OpenGL that renders a rotating 3D cube. It contains basic functions such as zooming in and out, dragging the cube around, changing colour, resizing and rotating the cube.
