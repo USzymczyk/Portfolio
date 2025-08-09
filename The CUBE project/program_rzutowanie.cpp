@@ -11,7 +11,7 @@ int color1 = 1;
 
 //mouse 
 int mouBut = -1; //stan przycisku myszki
-GLdouble click_x = 0, click_y = 0; //zmienne wspó³rzêdnych myszki 
+GLdouble click_x = 0, click_y = 0; //zmienne wspÃ³Â³rzÃªdnych myszki 
 float rot_x, rot_y;
 float zoom = 1;
 static GLdouble coordX = 0.0, coordY = 0.0;
@@ -24,14 +24,14 @@ void InitGL(void)
 	// Setting background colour
 	glClearColor(0.5, 1.0, 0.5, 0.0); // Colour light green
 	glClearDepth(1.0);
-	glEnable(GL_DEPTH_TEST); //rysowanie z g³êbi¹ ekranu
+	glEnable(GL_DEPTH_TEST); //rysowanie z gÂ³ÃªbiÂ¹ ekranu
 }
 
 //========================================================================================================================
 // ANGLES AND RADIUS 
 
 void Idle(void) {
-	kat += 0.3; // zwiêkszenie k¹ta obrotu o 5, to samo co kat = kat +5
+	kat += 0.3; // zwiÃªkszenie kÂ¹ta obrotu o 5, to samo co kat = kat +5
 	kat1 = 0.2;
 	kat2 = 0.1;
 	radius = 10;
@@ -72,7 +72,7 @@ void reshape(int w, int h)
 
 void draw(void)
 {
-	glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT); //czyszczenie buforów
+	glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT); //czyszczenie buforÃ³w
 
 	// Lab 3 Program 8; Adding text and using function void text(const char* string)
 
@@ -82,9 +82,9 @@ void draw(void)
 	glRasterPos2f(-200, 200);
 	text("Kolory 1-4: Only one sad cube");
 
-	//przed rysowaniem obiektów 
-	glTranslatef(coordX, coordY, 0); //przesuniêcie o coordX i coordY
-	glRotatef(rot_x, 0, 1, 0); //obrót o k¹t rot_x
+	//przed rysowaniem obiektÃ³w 
+	glTranslatef(coordX, coordY, 0); //przesuniÃªcie o coordX i coordY
+	glRotatef(rot_x, 0, 1, 0); //obrÃ³t o kÂ¹t rot_x
 	glRotatef(rot_y, 1, 0, 0);
 	glScalef(zoom, zoom, zoom); //skalowanie
 
@@ -135,20 +135,20 @@ void Klawiatura(unsigned char key, int x, int y)
 {
 	switch (key) //albo if(key == 'r') color1 = 1;
 	{
-	case '1': //je¿eli wciœniêty klawisz „1”
-		color1 = 1; //wartoœæ zmiennej color1 bêdzie 1
+	case '1': //jeÂ¿eli wciÅ“niÃªty klawisz â€1â€
+		color1 = 1; //wartoÅ“Ã¦ zmiennej color1 bÃªdzie 1
 		break;
-	case '2': //je¿eli wciœniêta „2”
-		color1 = 2; //wartoœæ zmiennej color1 bêdzie 2
+	case '2': //jeÂ¿eli wciÅ“niÃªta â€2â€
+		color1 = 2; //wartoÅ“Ã¦ zmiennej color1 bÃªdzie 2
 		break;
-	case '3': //je¿eli wciœniêta „2”
-		color1 = 3; //wartoœæ zmiennej color1 bêdzie 2
+	case '3': //jeÂ¿eli wciÅ“niÃªta â€2â€
+		color1 = 3; //wartoÅ“Ã¦ zmiennej color1 bÃªdzie 2
 		break;
-	case '4': //je¿eli wciœniêta „2”
-		color1 = 4; //wartoœæ zmiennej color1 bêdzie 2
+	case '4': //jeÂ¿eli wciÅ“niÃªta â€2â€
+		color1 = 4; //wartoÅ“Ã¦ zmiennej color1 bÃªdzie 2
 		break;
-	case 27: case 'q': case 'Q': //je¿eli wciœniête „q”, lub Esc (kod 27)
-		exit(0); // wyjœcie z programu
+	case 27: case 'q': case 'Q': //jeÂ¿eli wciÅ“niÃªte â€qâ€, lub Esc (kod 27)
+		exit(0); // wyjÅ“cie z programu
 		break;
 	}
 }
@@ -158,12 +158,12 @@ void Klawiatura(unsigned char key, int x, int y)
 
 void myMouse(int button, int state, int mouseX, int mouseY)
 {
-	if (state == GLUT_DOWN) { //je¿eli wciœniêty
+	if (state == GLUT_DOWN) { //jeÂ¿eli wciÅ“niÃªty
 		switch (button) {
 		case GLUT_LEFT_BUTTON: //lewy prycisk
 			mouBut = 0;
 			break;
-		case GLUT_MIDDLE_BUTTON: //œrodkowy (pokrêt³o)
+		case GLUT_MIDDLE_BUTTON: //Å“rodkowy (pokrÃªtÂ³o)
 			mouBut = 1;
 			break;
 		case GLUT_RIGHT_BUTTON: //prawy
@@ -171,7 +171,7 @@ void myMouse(int button, int state, int mouseX, int mouseY)
 			break;
 		}
 	}
-	click_x = mouseX; //wspó³rzêdne myszki w moment klikniêcia
+	click_x = mouseX; //wspÃ³Â³rzÃªdne myszki w moment klikniÃªcia
 	click_y = mouseY;
 }
 
@@ -180,18 +180,18 @@ void myMouse(int button, int state, int mouseX, int mouseY)
 
 void myMotion(int mouseX, int mouseY)
 {
-	if (mouBut == 0) //je¿eli wciœniêty lewy przycisk
+	if (mouBut == 0) //jeÂ¿eli wciÅ“niÃªty lewy przycisk
 	{
-		coordX -= (click_x - mouseX); //przesuniêcie od wspó³rz. click_x do mouseX
+		coordX -= (click_x - mouseX); //przesuniÃªcie od wspÃ³Â³rz. click_x do mouseX
 		coordY += (click_y - mouseY);
 	}
-	else if (mouBut == 1) //je¿eli pokrêt³o
+	else if (mouBut == 1) //jeÂ¿eli pokrÃªtÂ³o
 	{
-		zoom += (click_x - mouseX) * 0.05; //zmiana wspó³czynnika skalowania 
+		zoom += (click_x - mouseX) * 0.05; //zmiana wspÃ³Â³czynnika skalowania 
 	}
-	else if (mouBut == 2) //wciœniêty prawy przycisk
+	else if (mouBut == 2) //wciÅ“niÃªty prawy przycisk
 	{
-		rot_x -= (click_x - mouseX); //zmiana k¹ta obrotu zale¿na od click_x i mouseX
+		rot_x -= (click_x - mouseX); //zmiana kÂ¹ta obrotu zaleÂ¿na od click_x i mouseX
 		rot_y += (click_y - mouseY);
 	}
 
@@ -213,7 +213,7 @@ int main(int argc, char** argv)
 
 	InitGL();
 
-	//oœwietlenie 
+	//oÅ“wietlenie 
 	float pos[4] = { 1.50F, 3.50F, 0.25F, 0.00F };
 	float dir[3] = { -1,-1,-1 };
 	glEnable(GL_COLOR_MATERIAL);
